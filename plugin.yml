@@ -1,0 +1,34 @@
+name: VillagerRescue
+main: me.dizmizzer.vr.Main
+version: 1.0
+description: Save the Villager!
+
+commands:
+    vr:
+        usage: /<command>
+        description: All Villager Rescue Commands.
+        
+permissions:
+    villagerrescue.*:
+        description: All Villager Rescue permissions.
+        children:
+            villagerrescue.toggle: true
+            villagerrescue.forcestart: true
+            villagerrescue.reload: true
+            villagerrescue.time: true
+            villagerrescue.help: true
+    villagerrescue.help:
+        description: Show Help
+        default: op
+    villagerrescue.forcestart:
+        description: Force start a villager rescue
+        default: op 
+    villagerrescue.reload:
+        description: reload the config
+        default: op 
+    villagerrescue.time:
+        description: Allow to change time
+        default: op 
+    villagerrescue.toggle:
+        description: Toggle if it's enabled or not
+        default: op 
